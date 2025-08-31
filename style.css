@@ -83,13 +83,17 @@ body {
     width: 100%;
     padding: 10px;
     border: 2px solid #000;
-    border-radius: 25px 0 0 25px;
+    border-radius: 15px 0 0 15px;
     font-size: 16px;
 }
 
 .button-container {
-    width: 300px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    gap: 15px;
     justify-content: center;
+    margin-top: 20px;
 }
 
 /* Estilos de entrada de texto */
@@ -110,7 +114,7 @@ button {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     border: 2px solid #000;
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
@@ -118,7 +122,7 @@ button {
 .button-add {
     background-color: var(--color-tertiary);
     color: var(--color-text);
-    border-radius: 0 25px 25px 0;
+    border-radius: 0 15px 15px 0;
 }
 
 .button-add:hover {
@@ -151,6 +155,8 @@ ul {
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
+    flex: 1;
+    max-width: 200px;
 }
 
 .button-draw img {
@@ -159,4 +165,26 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+/* Estilo para o botão reiniciar */
+.button-restart {
+    flex: 1;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    color: var(--color-white);
+    background-color: #dc3545;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+}
+
+.button-restart:hover {
+    background-color: #c82333;
 }
